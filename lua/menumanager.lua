@@ -6,7 +6,7 @@ end
 
 function CCF:Reset()
 	self.settings = {
-		color_camera_filters = 1
+		color_camera_filters_value = 1
 	}
 end
 

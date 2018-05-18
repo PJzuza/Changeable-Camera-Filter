@@ -1,0 +1,46 @@
+{
+	"menu_id": "ccf_menu",
+	"parent_menu_id": "blt_options",
+	"title": "ccf_menu_title",
+	"description": "ccf_menu_desc",
+	"back_callback" : "ccf_save",
+	"items" : 	[
+		{
+			"type" : "multiple_choice",
+			"id" : "color_camera_filters",
+			"title" : "color_camera_filter_choice",
+			"description" : "color_camera_filter_choice_desc",
+			"callback" : "callback_color_camera_filters",
+			"items" : 	[
+					"color_sin",
+					"color_main",
+					"color_payday",
+					"color_heat",
+					"color_nice",
+					"color_bhd",
+					"color_xgen",
+					"color_xxxgen",
+					"color_matrix",
+					"color_matrix_classic",
+					"color_sin_classic",
+					"color_sepia",
+					"color_sunsetstrip",
+					"color_colorful",
+					"color_madplanet"
+						],
+			"value" : "color_camera_filters_value",
+			"default_value" : 1
+		},
+		{
+			"type" : "divider",
+			"size" : 32
+		},
+		{
+			"type" : "button",
+			"id" : "ccf_button_reset",
+			"title" : "ccf_options_reset_title",
+			"description" : "ccf_options_reset_desc",
+			"callback" : "callback_ccf_reset"
+		}
+	]
+}

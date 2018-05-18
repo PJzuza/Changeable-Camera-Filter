@@ -1,0 +1,23 @@
+{
+	"ccf_menu_title" : "Changeable Camera Filter",
+	"ccf_menu_desc" : "Change Camera Filter to any color grediants you want",
+	"color_camera_filter_choice" : "Camera Filter Types",
+	"color_camera_filter_choice_desc" : "Choose one camera filter. A heist must be restarted in order to show an effect.",
+	"color_sin" : "Default",
+	"color_main" : "IN TRAFFIC",
+	"color_payday" : "PAYDAY+",
+	"color_heat" : "DINERO",
+	"color_nice" : "GENSEC",
+	"color_bhd" : "BHD",
+	"color_xgen" : "XGEN BROWN",
+	"color_xxxgen" : "FUTURE OF GAMING",
+	"color_matrix" : "THE MATRICES",
+	"color_matrix_classic" : "MATRICES CLASSICS",
+	"color_sin_classic" : "BASTARD",
+	"color_sepia" : "WILD WEST",
+	"color_sunsetstrip" : "MAX SATURATION",
+	"color_colorful" : "HIPSTER VINTAGE",
+	"color_madplanet" : "MAD PLANET",
+	"ccf_options_reset_title" : "Reset",
+	"ccf_options_reset_desc" : "Reset camera filter into default value"
+}

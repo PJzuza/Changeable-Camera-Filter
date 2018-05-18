@@ -1,6 +1,5 @@
 Hooks:PostHook( IngameAccessCamera , "at_enter" , "CCF" , function( self , old_state, ...)
-    self._saved_default_color_grading = managers.environment_controller:default_color_grading()
-    managers.environment_controller:set_default_color_grading(CCF.settings.color_camera_filters)
+    --self._saved_default_color_grading = managers.environment_controller:default_color_grading()    managers.environment_controller:set_default_color_grading(CCF.settings.color_camera_filters_value)
 end)
 
 --[[local color_old = IngameAccessCamera.at_enter

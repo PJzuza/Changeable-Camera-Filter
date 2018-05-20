@@ -1,11 +1,11 @@
 {
 	    "name" : "Changeable Camera Filter",
-		"description" : "You can pick which color gradient you want to see in the camera filter",
-	    "author" : "NewPJzuza",
+		"description" : "Pick any color gradient you want to see in the camera feed.\n\nLocalization\n- English language by NewPJzuza.",
+	    "author" : "NewPJzuza and special thank you to Shockwave who came up with such a great name of this mod",
 	    "contact" : "http://steamcommunity.com/profiles/76561198147873022/",
 	    "version" : "1.0",
 	    "blt_version" : 2,
 	    "color": "239 170 66",
-	      "hooks":[{	"hook_id": "lib/managers/menumanager",	"script_path": "lua/menumanager.lua"},
-					{ 	"hook_id" : "lib/states/ingameaccesscamera", "script_path" : "lua/ingameaccesscamera.lua" }]
+	      "hooks":[{	"hook_id": "lib/managers/menumanager",	"script_path": "lua/changecamfilter.lua"},
+					{ 	"hook_id" : "lib/states/ingameaccesscamera", "script_path" : "lua/changecamfilter.lua" }]
 }

@@ -5,7 +5,7 @@
 	    "contact" : "http://steamcommunity.com/profiles/76561198147873022/",
 	    "version" : "1.0",
 	    "blt_version" : 2,
-		"image": "CFF.png",
+		"image": "CCF.png",
 	    "color": "239 170 66",
 		"updates" : [ { "identifier" : "ccf" } ],
 	    "hooks":[	{	"hook_id": "lib/managers/menumanager",	"script_path": "lua/changecamfilter.lua"},

@@ -1,4 +1,3 @@
---if not _G.CCF then
 	_G.CCF = _G.CCF or {}
 	CCF._path = ModPath
 	CCF.settings_path = SavePath .. "CCF.txt"
@@ -21,9 +20,8 @@
 			"color_colorful",
 			"color_madplanet"
 		}
---end
+-- Store Color Gradient before using it as a string value in PostHook
 function CCF:GetFilter()
-	log("[CCF]Check color_camera_filters_value", tostring(CCF.settings.color_camera_filters_value))
 	return CCF.Choose_Camera_Filter[CCF.settings.color_camera_filters_value]
 end
 
@@ -55,15 +53,11 @@ end
 
 --PostHook to overide a function IngameAccessCamera:at_enter
 Hooks:PostHook( IngameAccessCamera , "at_enter" , "ApplyCCF" , function(self)
-		--local filter = CCF:GetFilter()
-		-- add logs to check the value if it has contained the value and turned out it did but for some reasons it won't call in-game I think?) 
-		log("[CCF ingameaccesscamera]Check CCF:GetFilter() Function value", tostring(CCF:GetFilter()))
-		--log("[CCF ingameaccesscamera]Check filter value", tostring(filter))
-		--self._saved_default_color_grading = managers.environment_controller:default_color_grading()
 		managers.environment_controller:set_default_color_grading(CCF:GetFilter(), true)
 		managers.environment_controller:refresh_render_settings()
 end)
 
+--Localization thingy things :P
 Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", function( loc )
 	if file.DirectoryExists(CCF._path .. "loc/") then
 			for _, filename in pairs(file.GetFiles(CCF._path .. "loc/")) do
@@ -77,6 +71,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", func
 	loc:load_localization_file(CCF._path .. "loc/english.txt", false)
 end)
 
+-- Menu stuffs
 Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_CCF", function( menu_manager )
 	MenuCallbackHandler.callback_color_camera_filters = function (self, item)
 		CCF.settings.color_camera_filters_value = item:value()

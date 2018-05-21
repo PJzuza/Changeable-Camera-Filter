@@ -3,7 +3,7 @@
 		"description" : "Pick any color gradient you want to see in the camera feed.\n\nLocalization\n- English language by NewPJzuza.",
 	    "author" : "NewPJzuza and special thank you to Shockwave who came up with such a great name of this mod",
 	    "contact" : "http://steamcommunity.com/profiles/76561198147873022/",
-	    "version" : "1.0",
+	    "version" : "1.1",
 	    "blt_version" : 2,
 		"image": "CCF.png",
 	    "color": "239 170 66",

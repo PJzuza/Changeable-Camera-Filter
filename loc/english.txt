@@ -1,6 +1,6 @@
 {
 	"ccf_menu_title" : "Changeable Camera Filter",
-	"ccf_menu_desc" : "Change Camera Filter to any color grediants you want",
+	"ccf_menu_desc" : "Change Camera Filter to any color gradients you want",
 	"color_camera_filter_choice" : "Camera Filter Types",
 	"color_camera_filter_choice_desc" : "Choose one camera filter.\nYou need to use a camera feed again to enable a new filter.",
 	"color_sin" : "DEFAULT",

@@ -1,8 +1,8 @@
 {
-	"ccf_menu_title" : "Changeable Camera Filter",
-	"ccf_menu_desc" : "Change Camera Filter to any color grediants you want",
-	"color_camera_filter_choice" : "Camera Filter Types",
-	"color_camera_filter_choice_desc" : "Wähle einen Kamera Filter.\nYou need to use a camera feed again to enable a new filter.",
+	"ccf_menu_title" : "Veränderbare Kamera Filter",
+	"ccf_menu_desc" : "Verändere den Kamerafilter zu jedem Farbverlauf, den du willst",
+	"color_camera_filter_choice" : "Kamera Filter Typen",
+	"color_camera_filter_choice_desc" : "Verändere den Kamera Filter.\nDu musst die Kamera erneut benutzen, um einen neuen Filter zu aktivieren.",
 	"color_sin" : "DEFAULT",
 	"color_main" : "DEFAULT MAIN MENU",
 	"color_payday" : "PAYDAY+",

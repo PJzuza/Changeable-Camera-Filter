@@ -3,6 +3,8 @@ CCF version 1.1
 - Fixed a typo
 - Updated mod's version to 1.1
 - Added Changelog file 
+- Added Thai language by me
+- Added German language by ShiNRaX2
 
 CCF version 1.0
 Changeable Camera Filter reborn!!!

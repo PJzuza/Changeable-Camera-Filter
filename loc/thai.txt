@@ -1,0 +1,23 @@
+{
+	"ccf_menu_title" : "เปลี่ยนฟิลเตอร์กล้องตามใจชอบ",
+	"ccf_menu_desc" : "Changeable Camera Filter: เปลี่ยนฟิลเตอร์ของกล้องให้ใช้การไล่เฉดสีหรือ color gradients ตามความต้องการ",
+	"color_camera_filter_choice" : "ประเภทฟิลเตอร์ของกล้อง",
+	"color_camera_filter_choice_desc" : "เลือกฟิลเตอร์ของกล้องหนึ่งชนิด\nคุณต้องใช้ฟีดกล้องถ่ายรูปอีกครั้งเพื่อเปิดใช้งานฟิลเตอร์กล่องใหม่",
+	"color_sin" : "ค่าเริ่มต้น",
+	"color_main" : "ค่าเริ่มต้นแบบเมนูหลัก",
+	"color_payday" : "PAYDAY+",
+	"color_heat" : "DINERO",
+	"color_nice" : "GENSEC",
+	"color_bhd" : "BHD",
+	"color_xgen" : "XGEN BROWN",
+	"color_xxxgen" : "FUTURE OF GAMING",
+	"color_matrix" : "THE MATRICES",
+	"color_matrix_classic" : "MATRICES CLASSICS",
+	"color_sin_classic" : "BASTARD",
+	"color_sepia" : "WILD WEST",
+	"color_sunsetstrip" : "MAX SATURATION",
+	"color_colorful" : "HIPSTER VINTAGE",
+	"color_madplanet" : "MAD PLANET",
+	"ccf_options_reset_title" : "รีเซ็ต",
+	"ccf_options_reset_desc" : "รีเซ็ตประเภทฟิลเตอร์ของกล้องให้เป็นค่าเริ่มต้น"
+}

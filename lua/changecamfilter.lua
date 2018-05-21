@@ -60,6 +60,16 @@ end)
 --Localization thingy things :P
 Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", function( loc )
 	if file.DirectoryExists(CCF._path .. "loc/") then
+		local custom_language
+		for _, mod in pairs(BLT and BLT.Mods:Mods() or {}) do
+			if mod:GetName() == "PAYDAY 2 THAI LANGUAGE Mod" and mod:IsEnabled() then
+				custom_language = "thai"
+				break
+			end			
+		end
+		if custom_language then
+			loc:load_localization_file(CCF._path .. "loc/" .. custom_language ..".txt")
+		else
 			for _, filename in pairs(file.GetFiles(CCF._path .. "loc/")) do
 				local str = filename:match('^(.*).txt$')
 				if str and Idstring(str) and Idstring(str):key() == SystemInfo:language():key() then
@@ -67,6 +77,7 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", func
 					break
 				end
 			end
+		end
 	end
 	loc:load_localization_file(CCF._path .. "loc/english.txt", false)
 end)

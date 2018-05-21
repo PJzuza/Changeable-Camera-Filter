@@ -1,0 +1,11 @@
+Changelog 
+CCF version 1.1
+- Fixed a typo
+- Updated mod's version to 1.1
+- Added Changelog file 
+
+CCF version 1.0
+Changeable Camera Filter reborn!!!
+- Made a menu option
+- Changed texts to be more user friendly
+- Repolished the whole codes (Deleted  ingameaccesscamera.lua file, renamed menumanager.lua into changecamfilter.lua, rewritten the whole changecamfilter.lua)

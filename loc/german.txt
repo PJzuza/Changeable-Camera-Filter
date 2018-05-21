@@ -1,0 +1,23 @@
+{
+	"ccf_menu_title" : "Veränderbare Kamera Filter",
+	"ccf_menu_desc" : "Verändere den Kamerafilter zu jedem Farbverlauf, den du willst",
+	"color_camera_filter_choice" : "Kamera Filter Typen",
+	"color_camera_filter_choice_desc" : "Verändere den Kamera Filter.\nDu musst die Kamera erneut benutzen, um einen neuen Filter zu aktivieren.",
+	"color_sin" : "DEFAULT",
+	"color_main" : "DEFAULT MAIN MENU",
+	"color_payday" : "PAYDAY+",
+	"color_heat" : "DINERO",
+	"color_nice" : "GENSEC",
+	"color_bhd" : "BHD",
+	"color_xgen" : "XGEN BROWN",
+	"color_xxxgen" : "FUTURE OF GAMING",
+	"color_matrix" : "THE MATRICES",
+	"color_matrix_classic" : "MATRICES CLASSICS",
+	"color_sin_classic" : "BASTARD",
+	"color_sepia" : "WILD WEST",
+	"color_sunsetstrip" : "MAX SATURATION",
+	"color_colorful" : "HIPSTER VINTAGE",
+	"color_madplanet" : "MAD PLANET",
+	"ccf_options_reset_title" : "Zurücksetzen",
+	"ccf_options_reset_desc" : "Setze den Kamera Filter auf die Standarteinstellung zurück"
+}

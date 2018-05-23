@@ -22,11 +22,11 @@
 		}
 -- Store Color Gradient before using it as a string value in PostHook
 function CCF:GetFilter()
-	return CCF.Choose_Camera_Filter[CCF.settings.color_camera_filters_value]
+	return self.Choose_Camera_Filter[self.settings.color_camera_filters_value]
 end
 
 function CCF:Reset()
-	CCF.settings = {
+	self.settings = {
 		color_camera_filters_value = 1
 	}
 end
@@ -40,13 +40,12 @@ function CCF:Save()
 end
 
 function CCF:Load()
-	CCF:Reset()
-	local file = io.open(CCF.settings_path, "r")
+	self:Reset()
+	local file = io.open(self.settings_path, "r")
 	if file then
 		for k, v in pairs(json.decode(file:read('*all')) or {}) do
-				CCF.settings[k] = v
+				self.settings[k] = v
 		end
-		CCF:GetFilter()
 		file:close()
 	end
 end

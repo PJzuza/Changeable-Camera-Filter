@@ -1,4 +1,8 @@
 Changelog 
+CCF version 1.2
+- Added Chinese language by FR0Z3 
+- Added checked ChnMod (Patch) if it has in the game or not.
+
 CCF version 1.1a
 - Fixed code at menu part by ShockWave. Thank you so much :D
 

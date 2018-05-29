@@ -61,7 +61,10 @@ Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", func
 	if file.DirectoryExists(CCF._path .. "loc/") then
 		local custom_language
 		for _, mod in pairs(BLT and BLT.Mods:Mods() or {}) do
-			if mod:GetName() == "PAYDAY 2 THAI LANGUAGE Mod" and mod:IsEnabled() then
+			if mod:GetName() == "ChnMod (Patch)" and mod:IsEnabled() then
+				custom_language = "chinese"
+				break
+			elseif mod:GetName() == "PAYDAY 2 THAI LANGUAGE Mod" and mod:IsEnabled() then
 				custom_language = "thai"
 				break
 			end			

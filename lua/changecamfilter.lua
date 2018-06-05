@@ -51,10 +51,12 @@ function CCF:Load()
 end
 
 --PostHook to overide a function IngameAccessCamera:at_enter
-Hooks:PostHook( IngameAccessCamera , "at_enter" , "ApplyCCF" , function(self)
+if RequiredScript == "lib/states/ingameaccesscamera" then
+	Hooks:PostHook( IngameAccessCamera, "at_enter" , "ApplyCCF" , function(self)
 		managers.environment_controller:set_default_color_grading(CCF:GetFilter(), true)
 		managers.environment_controller:refresh_render_settings()
-end)
+	end)
+end
 
 --Localization thingy things :P
 Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", function( loc )

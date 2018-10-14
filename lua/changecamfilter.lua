@@ -22,11 +22,11 @@
 		}
 -- Store Color Gradient before using it as a string value in PostHook
 function CCF:GetFilter()
-	return CCF.Choose_Camera_Filter[CCF.settings.color_camera_filters_value]
+	return self.Choose_Camera_Filter[self.settings.color_camera_filters_value]
 end
 
 function CCF:Reset()
-	CCF.settings = {
+	self.settings = {
 		color_camera_filters_value = 1
 	}
 end
@@ -40,29 +40,33 @@ function CCF:Save()
 end
 
 function CCF:Load()
-	CCF:Reset()
-	local file = io.open(CCF.settings_path, "r")
+	self:Reset()
+	local file = io.open(self.settings_path, "r")
 	if file then
 		for k, v in pairs(json.decode(file:read('*all')) or {}) do
-				CCF.settings[k] = v
+				self.settings[k] = v
 		end
-		CCF:GetFilter()
 		file:close()
 	end
 end
 
 --PostHook to overide a function IngameAccessCamera:at_enter
-Hooks:PostHook( IngameAccessCamera , "at_enter" , "ApplyCCF" , function(self)
+if RequiredScript == "lib/states/ingameaccesscamera" then
+	Hooks:PostHook( IngameAccessCamera, "at_enter" , "ApplyCCF" , function(self)
 		managers.environment_controller:set_default_color_grading(CCF:GetFilter(), true)
 		managers.environment_controller:refresh_render_settings()
-end)
+	end)
+end
 
 --Localization thingy things :P
 Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", function( loc )
 	if file.DirectoryExists(CCF._path .. "loc/") then
 		local custom_language
 		for _, mod in pairs(BLT and BLT.Mods:Mods() or {}) do
-			if mod:GetName() == "PAYDAY 2 THAI LANGUAGE Mod" and mod:IsEnabled() then
+			if mod:GetName() == "ChnMod (Patch)" and mod:IsEnabled() then
+				custom_language = "chinese"
+				break
+			elseif mod:GetName() == "PAYDAY 2 THAI LANGUAGE Mod" and mod:IsEnabled() then
 				custom_language = "thai"
 				break
 			end			

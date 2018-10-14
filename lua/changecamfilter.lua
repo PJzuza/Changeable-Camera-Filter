@@ -58,6 +58,18 @@ if RequiredScript == "lib/states/ingameaccesscamera" then
 	end)
 end
 
+--PostHook to remove noise from camera
+--thx to Cpone for his help with this
+if RequiredScript == "lib/managers/hud/hudaccesscamera" then
+	Hooks:PostHook( HUDAccessCamera, "init", "HideHUDNoiseCCF", 
+	function(self)
+		--if config.removeNoise == true then
+		self._full_hud_panel:child("noise"):set_visible(false)
+		self._full_hud_panel:child("noise2"):set_visible(false)
+		--end
+	end)
+end
+
 --Localization thingy things :P
 Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", function( loc )
 	if file.DirectoryExists(CCF._path .. "loc/") then

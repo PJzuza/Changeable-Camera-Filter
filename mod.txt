@@ -9,5 +9,6 @@
 	    "color": "239 170 66",
 		"updates" : [ { "identifier" : "ccf" } ],
 	    "hooks":[	{	"hook_id": "lib/managers/menumanager",	"script_path": "lua/changecamfilter.lua"},
-					{ 	"hook_id" : "lib/states/ingameaccesscamera", "script_path" : "lua/changecamfilter.lua" }]
+					{ 	"hook_id": "lib/states/ingameaccesscamera", "script_path" : "lua/changecamfilter.lua" },
+					{	"hook_id": "lib/managers/hud/hudaccesscamera", "script_path" : "lua/changecamfilter.lua"}]
 }

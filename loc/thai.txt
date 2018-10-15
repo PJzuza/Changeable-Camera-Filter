@@ -20,4 +20,6 @@
 	"color_madplanet" : "MAD PLANET",
 	"ccf_options_reset_title" : "รีเซ็ต",
 	"ccf_options_reset_desc" : "รีเซ็ตประเภทฟิลเตอร์ของกล้องให้เป็นค่าเริ่มต้น"
+	"ccf_options_removecameranoise_title" : "ปิดนอยซ์ในฟีดแบคของกล้อง",
+	"ccf_options_removecameranoise_desc" : "Remove Camera Feedback Noise: เปิดตัวเลือกนี้เพื่อปิดนอยซ์ในฟีดแบคของกล้อง (จำเป็นต้องเริ่มเกมใหม่เพื่อแสดงผลลัพธ์)"
 }

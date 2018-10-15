@@ -32,6 +32,15 @@
 			"default_value" : 1
 		},
 		{
+            "type" : "toggle",
+            "id" : "ccf_options_removecameranoise_enabled_toggle",
+            "title" : "ccf_options_removecameranoise_title",
+            "description" : "ccf_options_removecameranoise_desc",
+            "callback" : "callback_ccf_options_removecameranoise_enabled",
+			"value" : "ccf_options_removecameranoise_toggle_value",
+            "default_value" : false
+		},
+		{
 			"type" : "divider",
 			"size" : 32
 		},

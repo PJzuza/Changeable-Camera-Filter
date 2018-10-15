@@ -20,4 +20,6 @@
 	"color_madplanet" : "MAD PLANET",
 	"ccf_options_reset_title" : "重置",
 	"ccf_options_reset_desc" : "将滤镜样式恢复到默认设置"
+	"ccf_options_removecameranoise_title" : "Remove Camera Feedback Noise",
+	"ccf_options_removecameranoise_desc" : "Enable this option to remove Camera Feedback Noise. (Restart the heist is required)"
 }

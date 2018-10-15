@@ -21,5 +21,5 @@
 	"ccf_options_reset_title" : "Reset",
 	"ccf_options_reset_desc" : "Reset camera filter types to default",
 	"ccf_options_removecameranoise_title" : "Remove Camera Feedback Noise",
-	"ccf_options_removecameranoise_desc" : "Enable this option to remove Camera Feedback Noise. (Restart the heist is required)"
+	"ccf_options_removecameranoise_desc" : "Enable this option to remove Camera Feedback Noise. (Restart of the heist is required)"
 }

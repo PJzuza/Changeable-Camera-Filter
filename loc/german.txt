@@ -21,5 +21,5 @@
 	"ccf_options_reset_title" : "Zurücksetzen",
 	"ccf_options_reset_desc" : "Setze den Kamera Filter auf die Standarteinstellung zurück.",
 	"ccf_options_removecameranoise_title" : "Bildrauschen entfernen",
-	"ccf_options_removecameranoise_desc" : "Entfern das Bildrauschen auf Kamerabildern."
+	"ccf_options_removecameranoise_desc" : "Entfern das Bildrauschen auf Kamerabildern.(Neustart des Raubs erforderlich)"
 }

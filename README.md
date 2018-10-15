@@ -17,5 +17,5 @@ You can pick which color gradient you want to see in the camera feed
 
 ## Special thank you  
 1. [Shockwave](http://steamcommunity.com/profiles/76561198078556212/) my friend who came up with such a great name of this mod and who gave a good name for "color_main" and a lot of good advices while I was making this mod.  
-2. [ShiNRaX2](http://steamcommunity.com/profiles/76561198028016758/) for German translation.
+2. [ShiNRaX2](http://steamcommunity.com/profiles/76561198028016758/) for German translation and for improving this mod to be in the better state.
 3. [FR0Z3](http://steamcommunity.com/profiles/76561198058215284/) for Chinese translation.

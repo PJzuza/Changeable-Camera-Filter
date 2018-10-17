@@ -9,12 +9,7 @@
 	    "color": "239 170 66",
 		"updates" : [ 
 			{
-				"identifier" : "ChangeableCameraFilter",
-				"host" : {
-					"meta" : "https://raw.githubusercontent.com/PJzuza/Changeable-Camera-Filter/blob/master/updates/meta.json",
-					"download" :"https://raw.githubusercontent.com/PJzuza/Changeable-Camera-Filter/blob/master/updates/CCF.zip",
-					"patchnotes" : "https://modworkshop.net/mydownloads.php?action=view_down&did=22650#changelog"
-					}
+				"identifier" : 22650
 			}],
 	    "hooks":[	{	"hook_id": "lib/managers/menumanager",	"script_path": "lua/changecamfilter.lua"},
 					{ 	"hook_id": "lib/states/ingameaccesscamera", "script_path" : "lua/changecamfilter.lua" },

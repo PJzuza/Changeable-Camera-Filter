@@ -1,3 +1,6 @@
+CCF version 1.5
+- Fixed crashing when resetting mod settings to default
+
 CCF version 1.4
 - Added Remove Camera Feedback Noise option thanks to ShiNRaX2
  
@@ -11,7 +14,7 @@ CCF version 1.2
 - Added checked ChnMod (Patch) if it has in the game or not.
 
 CCF version 1.1a
-- Fixed code at menu part by ShockWave. Thank you so much :D
+- Fixed code at menu part by Dom. Thank you so much :D
 
 CCF version 1.1
 - Fixed a typo

@@ -27,7 +27,8 @@ end
 
 function CCF:Reset()
 	self.settings = {
-		color_camera_filters_value = 1
+		color_camera_filters_value = 1,
+		ccf_options_removecameranoise_toggle_value = false,
 	}
 end
 
@@ -51,17 +52,34 @@ function CCF:Load()
 end
 
 --PostHook to overide a function IngameAccessCamera:at_enter
-Hooks:PostHook( IngameAccessCamera , "at_enter" , "ApplyCCF" , function(self)
+if RequiredScript == "lib/states/ingameaccesscamera" then
+	Hooks:PostHook( IngameAccessCamera, "at_enter" , "ApplyCCF" , function(self)
 		managers.environment_controller:set_default_color_grading(CCF:GetFilter(), true)
 		managers.environment_controller:refresh_render_settings()
-end)
+	end)
+end
+
+--PostHook to remove noise from camera
+--thx to Cpone for his help with this
+if RequiredScript == "lib/managers/hud/hudaccesscamera" then
+	Hooks:PostHook( HUDAccessCamera, "init", "HideHUDNoiseCCF", 
+	function(self)
+		if CCF.settings.ccf_options_removecameranoise_toggle_value == true then
+			self._full_hud_panel:child("noise"):set_visible(false)
+			self._full_hud_panel:child("noise2"):set_visible(false)
+		end
+	end)
+end
 
 --Localization thingy things :P
 Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_CCF", function( loc )
 	if file.DirectoryExists(CCF._path .. "loc/") then
 		local custom_language
 		for _, mod in pairs(BLT and BLT.Mods:Mods() or {}) do
-			if mod:GetName() == "PAYDAY 2 THAI LANGUAGE Mod" and mod:IsEnabled() then
+			if mod:GetName() == "ChnMod (Patch)" and mod:IsEnabled() then
+				custom_language = "chinese"
+				break
+			elseif mod:GetName() == "PAYDAY 2 THAI LANGUAGE Mod" and mod:IsEnabled() then
 				custom_language = "thai"
 				break
 			end			
@@ -86,13 +104,18 @@ Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_CCF", function( menu_
 	MenuCallbackHandler.callback_color_camera_filters = function (self, item)
 		CCF.settings.color_camera_filters_value = item:value()
 	end
-
+	MenuCallbackHandler.callback_ccf_options_removecameranoise_enabled = function(self, item)
+		CCF.settings.ccf_options_removecameranoise_toggle_value = (item:value() == "on" and true or false)
+		CCF:Save()
+	end
+	
 	MenuCallbackHandler.ccf_save = function(this, item)
 		CCF:Save()
 	end
 	
 	MenuCallbackHandler.callback_ccf_reset = function(self, item)
 		MenuHelper:ResetItemsToDefaultValue(item, {["color_camera_filters"] = true}, 1)
+		MenuHelper:ResetItemsToDefaultValue(item, {["ccf_options_removecameranoise_enabled_toggle"] = true}, ccf_options_removecameranoise_toggle_value)
 	end
 	
 	CCF:Load()	

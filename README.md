@@ -16,5 +16,7 @@ You can pick which color gradient you want to see in the camera feed
 4. Enjoy :)  
 
 ## Special thank you  
-1. [Shockwave](http://steamcommunity.com/profiles/76561198078556212/) my friend who came up with such a great name of this mod and who gave a good name for "color_main" and a lot of good advices while I was making this mod.  
-2. [ShiNRaX2](http://steamcommunity.com/profiles/76561198028016758/) for German translation.
+1. [Dom](http://steamcommunity.com/profiles/76561198078556212/) my friend who came up with such a great name of this mod and who gave a good name for "color_main" and a lot of good advices while I was making this mod.  
+2. [ShiNRaX2](http://steamcommunity.com/profiles/76561198028016758/) for German translation and the camera noise removal feature.
+3. [FR0Z3](http://steamcommunity.com/profiles/76561198058215284/) for Chinese translation.
+4. [Cpone](https://modworkshop.net/member.php?action=profile&uid=8032) for his help with the camera noise removal feature.

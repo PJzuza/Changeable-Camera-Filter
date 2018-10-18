@@ -1,4 +1,18 @@
+CCF version 1.4
+- Added Remove Camera Feedback Noise option thanks to ShiNRaX2
+ 
 Changelog 
+CCF version 1.3
+- Fixed logs error in logs file [Hooks] Error: Could not hook function 'at_enter'
+- Changed mod.txt a bit
+
+CCF version 1.2
+- Added Chinese language by FR0Z3 
+- Added checked ChnMod (Patch) if it has in the game or not.
+
+CCF version 1.1a
+- Fixed code at menu part by ShockWave. Thank you so much :D
+
 CCF version 1.1
 - Fixed a typo
 - Updated mod's version to 1.1

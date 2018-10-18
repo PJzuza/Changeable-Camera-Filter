@@ -1,10 +1,10 @@
 {
-	"ccf_menu_title" : "Changeable Camera Filter",
-	"ccf_menu_desc" : "Change Camera Filter to any color gradients you want",
-	"color_camera_filter_choice" : "Camera Filter Types",
-	"color_camera_filter_choice_desc" : "Choose one camera filter.\nYou need to use a camera feed again to enable a new filter.",
-	"color_sin" : "DEFAULT",
-	"color_main" : "DEFAULT MAIN MENU",
+	"ccf_menu_title" : "可更换摄像头滤镜",
+	"ccf_menu_desc" : "将摄像头的滤镜样式改为你所需要的样子",
+	"color_camera_filter_choice" : "摄像头滤镜样式",
+	"color_camera_filter_choice_desc" : "请选择一种滤镜样式.\n你需要再次查看摄像头才应用更改.",
+	"color_sin" : "默认",
+	"color_main" : "默认(主界面样式)",
 	"color_payday" : "PAYDAY+",
 	"color_heat" : "DINERO",
 	"color_nice" : "GENSEC",
@@ -15,11 +15,11 @@
 	"color_matrix_classic" : "MATRICES CLASSICS",
 	"color_sin_classic" : "BASTARD",
 	"color_sepia" : "WILD WEST",
-	"color_sunsetstrip" : "MAX SATURATION",
+	"color_sunsetstrip" : "最大饱和度",
 	"color_colorful" : "HIPSTER VINTAGE",
 	"color_madplanet" : "MAD PLANET",
-	"ccf_options_reset_title" : "Reset",
-	"ccf_options_reset_desc" : "Reset camera filter types to default",
+	"ccf_options_reset_title" : "重置",
+	"ccf_options_reset_desc" : "将滤镜样式恢复到默认设置"
 	"ccf_options_removecameranoise_title" : "Remove Camera Feedback Noise",
 	"ccf_options_removecameranoise_desc" : "Enable this option to remove Camera Feedback Noise. (Restart the heist is required)"
 }

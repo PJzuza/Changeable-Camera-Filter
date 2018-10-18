@@ -1,5 +1,7 @@
 CCF version 1.5
-- Fixed crashing when resetting mod settings to default
+- Optimized some parts of the code thanks to Dom
+- Updated mod.txt 
+- Fixed the auto-updater
 
 CCF version 1.4
 - Added Remove Camera Feedback Noise option thanks to ShiNRaX2

@@ -1,3 +1,6 @@
+CCF version 1.6
+- Added Italian language by LycanC.H.K.N.
+
 CCF version 1.5
 - Optimized some parts of the code thanks to Dom
 - Updated mod.txt 

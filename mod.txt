@@ -1,9 +1,9 @@
 {
 	    "name" : "Changeable Camera Filter",
-		"description" : "Pick any color gradients you want to see in the camera feed.\n\nLocalization\n- English & Thai language by NewPJzuza.\n- German langauge by ShiNRaX2.\n- Chinese langauge by FR0Z3.",
+		"description" : "Pick any color gradients you want to see in the camera feed.\n\nLocalization\n- English & Thai language by NewPJzuza.\n- German language by ShiNRaX2.\n- Chinese language by FR0Z3.\n- Italian language by LycanC.H.K.N.",
 	    "author" : "NewPJzuza & ShiNRaX2 and special thank you to Dom who came up with such a great name of this mod",
 	    "contact" : "http://steamcommunity.com/profiles/76561198147873022/, https://steamcommunity.com/id/shinrax2/, https://steamcommunity.com/profiles/76561198078556212/",
-	    "version" : "1.5",
+	    "version" : "1.6",
 	    "blt_version" : 2,
 		"image": "CCF.png",
 	    "color": "239 170 66",

@@ -20,3 +20,4 @@ You can pick which color gradient you want to see in the camera feed
 2. [ShiNRaX2](http://steamcommunity.com/profiles/76561198028016758/) for German translation and the camera noise removal feature.
 3. [FR0Z3](http://steamcommunity.com/profiles/76561198058215284/) for Chinese translation.
 4. [Cpone](https://modworkshop.net/member.php?action=profile&uid=8032) for his help with the camera noise removal feature.
+5. [LycanC.H.K.N.](https://modworkshop.net/member.php?action=profile&uid=720) for Italian translation.
